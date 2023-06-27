@@ -1,0 +1,22 @@
+.output{
+    /* background-color: rgb(16, 10, 43); */
+    height: 30px;
+    width: 100px;
+    text-align:center;
+    /* justify-content: center; */
+    margin-right: 100px;
+}
+.card{
+    padding: 10px;
+    background-color: #b3afec;
+}
+h1{
+    font-size: x-large;
+    font-weight: bold;
+    text-align:center;
+    color: brown;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+}

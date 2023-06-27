@@ -1,0 +1,38 @@
+<template>
+    <lightning-card >
+    <div style={backColor}>
+        <h1> {headerText}</h1>
+       <lightning-input type="number" name="amount" label="AMOUNT" onchange={handleChange} class="slds-var-m-around_medium"></lightning-input>
+       <lightning-combobox
+       name="countryFrom"
+       label="FROM"
+       value={countryFrom}
+       placeholder="Select Country Code"
+       options={countryList}
+       onchange={handleChange} 
+       class="slds-var-m-around_medium">
+    </lightning-combobox>
+    
+       <lightning-combobox
+       name="countryTo"
+       label="TO"
+       value={countryTo}
+       placeholder="Select Country Code"
+       options={countryList}
+       onchange={handleChange} 
+       class="slds-var-m-around_medium"></lightning-combobox>
+       
+       <lightning-button variant="brand" 
+       label="Calculate" 
+       title="Curency Converter"
+        onclick={handleClick}
+        class="slds-var-m-around_medium">
+    </lightning-button>
+     
+    <div class="output slds-var-m-around_medium"  style={backColor}>
+       <p style={resultTextColor}>{finalResult}</p> 
+    </div>
+</div>
+</lightning-card>
+    
+</template>

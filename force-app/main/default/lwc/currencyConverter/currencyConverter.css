@@ -1,0 +1,8 @@
+.output{
+    background-color: rgb(208, 255, 0);
+    height: 30px;
+    width: 100px;
+    text-align:center;
+    /* justify-content: center; */
+    margin-right: 100px;
+}
